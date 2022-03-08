@@ -1,0 +1,21 @@
+h2{
+    text-align: center;
+}
+
+#enviar{
+    background-color: darkgreen;
+    color: white;
+}
+
+#resetar{
+    background-color: darkred;
+    color: white;
+}
+
+#btnForms{
+    padding-top: 20px;
+}
+
+#formContainer{
+    padding-top: 100px;
+}
