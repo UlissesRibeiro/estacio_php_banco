@@ -22,13 +22,13 @@
                 <form class="form-area" action="cadastra.php" method="post">
                     <h2>Cadastro de clientes</h2>
                     <label for="nome">Nome* :</label>
-                    <input class="common-input mb-20 form-control" type="text" name="nome" id="nome" placeholder="nome completo" minlenght="3" maxlenght="100" required>
+                    <input class="common-input mb-20 form-control" type="text" name="nome_cliente" id="nome" placeholder="nome completo" minlenght="3" maxlenght="100" required>
                     <label for="cpf">CPF* :</label>
-                    <input class="common-input mb-20 form-control" type="cpf" name="cpf" id="cpf" placeholder="apenas números" minlenght="11" maxlenght="11" required>
+                    <input class="common-input mb-20 form-control" type="cpf" name="cpf_cliente" id="cpf" placeholder="apenas números" minlenght="11" maxlenght="11" required>
                     <label for="data_nascimento">Data de nascimento:*</label>
-                    <input class="common-input mb-20 form-control" type="date" name="data_nascimento" id="data_nascimento" placeholder="DD/MM/AAAA" required>
+                    <input class="common-input mb-20 form-control" type="date" name="data_nascimento_cliente" id="data_nascimento" placeholder="DD/MM/AAAA" required>
                     <label for="email">E-mail:*</label>
-                    <input class="common-input mb-20 form-control" type="email" name="email" id="email" placeholder="email@email.com" required>
+                    <input class="common-input mb-20 form-control" type="email" name="email_cliente" id="email" placeholder="email@email.com" required>
                     <div style="color:red;"> * campos obrigatórios!</div>
                     <div id="btnForms">
                         <button id="enviar" class="btn" type="submit">Enviar</button>

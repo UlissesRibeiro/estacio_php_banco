@@ -1,10 +1,17 @@
 <?php
 
-$conn = new mysqli("localhost","root","ragnarok0","estacio");
+/***CONEXÃO COM O BD ***/
+//Constantes para armazenamento das variáveis de conexão.
+define('HOST', 'localhost');
+define('PORT', '3306');
+define('DBNAME', 'estacio');
+define('USER', 'root');
+define('PASSWORD', 'ragnarok0');
 
-if($conn->connect_error){
-    echo "Erro :" .$conn->connect_error;
-}
-else{
-    echo "Conexão efetuada com sucesso!";
-}
+try {
+    $conn = new PDO("mysql:host=". HOST . ";port=".PORT.";dbname=" . DBNAME . ";user=" . USER . ";password=" . PASSWORD);
+    //echo "Connected successfully";
+    }
+    catch (PDOException $e) {
+        //echo 'A conexão falhou e retorno a seguinte mensagem de erro: ' . $e->getMessage();
+    }
